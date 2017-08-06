@@ -1,6 +1,6 @@
 #: init/junit-service.js
-msgid "JUnit test"
-msgstr "Test de JUnit"
+msgid "JUnit launch test"
+msgstr "Lanzar test de JUnit"
 
 #: init/junit-service.js
 msgid "No server selected"

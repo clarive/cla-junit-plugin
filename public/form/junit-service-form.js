@@ -11,19 +11,13 @@
         with_vars: 1
     });
 
-    var classPathTextField = Cla.ui.textField({
-            name: 'classPath',
-            fieldLabel: _('Class path'),
-            value: data.classPath || '',
-            allowBlank: false
-        });
-
-    var libPathTextField = Cla.ui.textField({
-            name: 'libPath',
-            fieldLabel: _('Libraries path'),
-            value: data.libPath || '',
-            allowBlank: false
-        });
+    var libPathArray = Cla.ui.arrayGrid({
+        name: 'libPath',
+        fieldLabel: _('Libraries path'),
+        value: data.libPath,
+        description: _('Libraries path'),
+        default_value: '.',
+    });
 
     var testRunnerTextField = Cla.ui.textField({
             name: 'testRunner',
@@ -56,9 +50,7 @@
         layout: 'form',
         items: [
             junitServerCombo,
-            classPathTextField,
-            libPathTextField,
-            testRunnerTextField,
+            libPathArray,
             testClassTextField,
             errorBox
         ]

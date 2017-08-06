@@ -1,7 +1,7 @@
 var reg = require("cla/reg");
 
 reg.register('service.junit.test', {
-    name: _('JUnit test'),
+    name: _('JUnit launch test'),
     icon: '/plugin/cla-junit-plugin/icon/junit.svg',
     form: '/plugin/cla-junit-plugin/form/junit-service-form.js',
     handler: function(ctx, params) {
@@ -11,15 +11,12 @@ reg.register('service.junit.test', {
         var log = require('cla/log');
 
         var server = params.junitServer;
-        var classPath = params.classPath;
         var libPath = params.libPath;
-        var testRunner = params.testRunner;
         var testClass = params.testClass;
         var errors = params.errors || 'fail';
-        var customParams = params.custom;
         var fullCommand = "";
 
-        if (server == "") {
+        if (!server) {
             log.fatal(_("No server selected"));
         }
 
@@ -44,7 +41,9 @@ reg.register('service.junit.test', {
             return output;
         }
 
-        fullCommand = 'java -cp "' + classPath + '":"' + libPath + '" ' + testRunner + " " + testClass;
+        var paths = libPath.join(":");
+
+        fullCommand = "java -cp " + paths + " org.junit.runner.JUnitCore " + testClass;
 
         log.info(_("Starting JUnit test"));
         var response = remoteCommand(params, fullCommand, server, errors);
