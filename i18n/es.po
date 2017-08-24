@@ -1,0 +1,35 @@
+#: init/junit-service.js
+msgid "JUnit test"
+msgstr "Test de JUnit"
+
+#: init/junit-service.js
+msgid "No server selected"
+msgstr "Ningn servidor seleccionado"
+
+#: init/junit-service.js
+msgid "Starting JUnit test"
+msgstr "Iniciando test de JUnit"
+
+#: init/junit-service.js
+msgid "JUnit test finished"
+msgstr "Test de JUnit finalizado"
+
+#: public/form/junit-service-form.js
+msgid "Server"
+msgstr "Servidor"
+
+#: public/form/junit-service-form.js
+msgid "Class path"
+msgstr "Ruta de la clase"
+
+#: public/form/junit-service-form.js
+msgid "Libraries path"
+msgstr "Ruta de las librerias"
+
+#: public/form/junit-service-form.js
+msgid "Test runner"
+msgstr "Lanzador de tests"
+
+#: public/form/junit-service-form.js
+msgid "Test class"
+msgstr "Clase para el test"
