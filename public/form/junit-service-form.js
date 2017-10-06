@@ -4,7 +4,7 @@
 
     var junitServerCombo = Cla.ui.ciCombo({
         name: 'junitServer',
-        class: 'generic_server',
+        role: 'Server',
         fieldLabel: _('Server'),
         value: data.junitServer || '',
         allowBlank: false,
