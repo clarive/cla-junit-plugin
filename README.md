@@ -1,6 +1,6 @@
 # Junit plugin
 
-<img src="https://cdn.rawgit.com/clarive/cla-junit-plugin/master/public/icon/junit.svg?sanitize=true" alt="JUnit Plugin" title="JUnit Plugin" width="120" height="120">
+<img src="https://cdn.jsdelivr.net/gh/clarive/cla-junit-plugin/public/icon/junit.svg?sanitize=true" alt="JUnit Plugin" title="JUnit Plugin" width="120" height="120">
 
 JUnit plugin will allow you to launch JUnit tests from a Clarive instance.
 
