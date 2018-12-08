@@ -1,7 +1,7 @@
 name: JUnit Plugin
 description: JUnit plugin will allow you to launch JUnit tests from a Clarive instance.
 version: 1.0
-icon: https://cdn.rawgit.com/clarive/cla-junit-plugin/master/public/icon/junit.svg?sanitize=true
+icon: https://cdn.jsdelivr.net/gh/clarive/cla-junit-plugin/public/icon/junit.svg?sanitize=true
 url: https://github.com/clarive/cla-junit-plugin
 requires:
   - clarive_version: 6.8 <= version
